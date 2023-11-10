@@ -1,0 +1,135 @@
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Tapiwa/Desktop/New folder/.git/
+
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git add task1.txt
+
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git add user.name"tapiwagwiza"
+fatal: pathspec 'user.nametapiwagwiza' did not match any files
+
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git commit -m "first commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Tapiwa@tapiwagwiza.(none)')
+
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git config --global user.name "tapiwagwiza"
+
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git commit -m "commit1"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Tapiwa@tapiwagwiza.(none)')
+
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git config —global user.tapscare@gmail.com
+error: key does not contain a section: —global
+
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git config --global user.emailtapscrae@gmail.com
+
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git commit -m "commit1"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Tapiwa@tapiwagwiza.(none)')
+
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git config --global user.email "tapscrae@gmail.com"
+
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git config --global user.name "Tapiwa Gwiza"
+
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git add task1.txt
+
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git commit -m "commit1"
+[master (root-commit) fdc1e03] commit1
+ 2 files changed, 4 insertions(+)
+ create mode 100644 task1
+ create mode 100644 task1.txt
+
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git commit -m "commit2"
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    task1
+        modified:   task1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git add task1.txt
+
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git commit -m "commit2"
+[master 91a8c82] commit2
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git add task1.txt
+
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git commit -m "commit3"
+[master 05a6108] commit3
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git log
+commit 05a61088ed64c566c738b5b0c550873e26fb2344 (HEAD -> master)
+Author: Tapiwa Gwiza <tapscrae@gmail.com>
+Date:   Fri Nov 10 18:13:36 2023 +0100
+
+    commit3
+
+commit 91a8c8226e5a5e836400d17b67c5fcba03466deb
+Author: Tapiwa Gwiza <tapscrae@gmail.com>
+Date:   Fri Nov 10 18:12:48 2023 +0100
+
+    commit2
+
+commit fdc1e0372b8499cc6271010349d68afa54722346
+Author: Tapiwa Gwiza <tapscrae@gmail.com>
+Date:   Fri Nov 10 18:10:27 2023 +0100
+
+    commit1
+
+Tapiwa@tapiwagwiza MINGW64 ~/Desktop/New folder (master)
+$ git checkout
+D       task1
